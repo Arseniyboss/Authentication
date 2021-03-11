@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+:root {
+  --primary-color: white;
+}
+
+body {
+  background: rgb(240, 240, 240);
+}
+
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container form {
+  width: 350px;
+  padding: 30px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: #444;
+}
+
+.form-container form h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.form-container form .form-group {
+  display: block;
+  margin: 0.8rem 0;
+}
+
+.form-container input {
+  margin-top: 0.8rem;
+  outline: none;
+  padding: 10px 0;
+  padding-left: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  width: 100%;
+}
+
+.form-container input:focus {
+  border: 1px solid #444;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.form-container button,
+nav button {
+  outline: none;
+  border: none;
+  border-radius: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 10px 16px;
+  background: #f7d653;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.form-container button:hover,
+nav button:hover {
+  opacity: 0.8;
+}
+
+.form-container button {
+  display: block;
+  margin-top: 30px;
+}
+
+.form-container p {
+  margin-top: 20px;
+}
+
+.form-container span {
+  margin-left: 15px;
+  color: coral;
+  cursor: pointer;
+}
+
+.form-container span:hover {
+  opacity: 0.8;
+}
+
+.link {
+  text-decoration: none;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: cyan;
+  padding: 20px;
+}
+
+nav h2 {
+  color: var(--primary-color);
+  margin-left: 20px;
+}
+
+nav .buttons {
+  position: absolute;
+  right: 20px;
+}
+
+nav button {
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .form-container form {
+    width: 300px;
+  }
+  .form-container span {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .form-container form {
+    width: 250px;
+  }
+}
